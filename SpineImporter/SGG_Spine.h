@@ -77,5 +77,12 @@ typedef enum {
 
 
 
+-(void)enqueueAnimation:(NSString*)animationName;
+-(void)enqueueAnimations:(NSArray<NSString*>*)animationNames;
+-(void)enqueueIndefiniteAnimation:(NSString*)animationName;
+-(void)enqueueAnimation:(NSString*)animationName forNumberOfRuns:(NSInteger)numberOfRuns;
+-(NSString *)dequeueNextAnimation;
+-(void)cancelAllInstancesOfEnqueuedAnimationNamed:(NSString*)animationName;
+
 
 @end
